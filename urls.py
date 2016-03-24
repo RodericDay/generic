@@ -1,8 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 from django.conf.urls import url
 from django.contrib import admin
 
+
+landing = lambda request: render(request, "landing.html")
+
 urlpatterns = [
-    url(r'^$', lambda request: HttpResponse("Hello"), name="landing"),
+    url(r'^$', landing, name="landing"),
     url(r'^admin/', admin.site.urls),
 ]

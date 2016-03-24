@@ -1,0 +1,13 @@
+nav {
+  text-align: center;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  background-color: white;
+}
+article {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: justify;
+}
